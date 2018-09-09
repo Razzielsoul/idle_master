@@ -116,7 +116,7 @@ namespace IdleMaster
           }
 
           // Save the "steamLogin" cookie and construct and save the user's profile link
-          else if (cookie.Name == "steamLogin")
+          else if (cookie.Name == "steamLoginSecure")
           {
             Settings.Default.steamLogin = cookie.Value;
             Settings.Default.myProfileURL = SteamProfile.GetSteamUrl();
